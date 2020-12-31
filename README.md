@@ -10,6 +10,10 @@ The simple prediction of future prices with RNNs or CNNs is not enough to make m
 
 This project is an attempt to see if is possible to use reinforcement and Q learning to predict and act super-humanly upon cryptocurrency prices and positions, despite the lack of evidence.
 
+## Approach
+
+This work uses a Model-free Reinforcement Learning technique called Deep Q-Learning (neural variant of Q-Learning). At any given time (episode), an agent abserves it's current state (n-day window stock price representation), selects and performs an action (buy/sell/hold), observes a subsequent state, receives some reward signal (difference in portfolio position) and lastly adjusts it's parameters based on the gradient of the loss computed.
+
 
 
 
